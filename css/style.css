@@ -125,6 +125,9 @@ span{
 
 .home-content, .sobre-countent{
     width: 45%;
+    border: 1px solid red;
+    justify-content: center;
+    align-items: center;
 }
 
 .home-content h3, .sobre-countent h3{
@@ -243,19 +246,36 @@ span{
     text-align: center;
     width: 420px;
     height: 180px;
-    border-radius: 30px;
     border: 2px solid var(--main-color);
     background: var(--bg-color-01);
     margin-right: -180px;
     z-index: 2;
 }
+.description a{
+    color: var(--main-color);
+}
 
+.tec-usadas a{
+    font-size: 25px;
+    color: var(--main-color);
+    
+} 
+
+
+.tec-usadas li{
+    font-size: 25px;
+    color: orangered;
+} 
+
+.tec-usadas i{
+    font-size: 25px;
+    color: yellow;
+} 
 
 .description{
     text-align: center;
     width: 420px;
     height: 180px;
-    border-radius: 30px;
     border: 2px solid var(--main-color);
     background: var(--bg-color-01);
     margin-left: -180px;
@@ -267,7 +287,7 @@ span{
     opacity: 50%;
     width: 520px;
     height: 280px;
-    border-radius: 20px;
+    
     border: 1px solid var(--main-color);
     margin-right: px;
     z-index: 1;
@@ -287,6 +307,13 @@ span{
 .midias-sociais img{
     width: 3.5rem;
     
+}
+
+.git2{
+    color: #00eeff;
+    width: 15px;
+    height: 15px;
+
 }
 
 .midias-sociais a {
@@ -435,7 +462,6 @@ span{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
         width: 100%;
         gap: 10px;
     }
