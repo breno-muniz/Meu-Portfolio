@@ -106,7 +106,8 @@ span{
 
 .home-img img, .sobre-img img{
     width: 100%;
-    /*border: solid red;*/
+    box-shadow: #00eeff;
+    box-shadow: 0 0 4px 5px #00b5fd6c;
 }
 /*Animação*/
 .home-img img {
@@ -124,9 +125,10 @@ span{
 }
 
 .home-content, .sobre-countent{
-    width: 45%;
-    border: 1px solid red;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -144,6 +146,7 @@ span{
 .home-content p, .sobre-countent p{
     margin-top: 1.2rem;
     text-align: justify;
+    font-size: 22px;
 
 }
 
@@ -251,7 +254,15 @@ span{
     margin-right: -180px;
     z-index: 2;
 }
-.description a{
+.description-principal a{
+    color: var(--main-color);
+}
+
+.description-principal p{
+    font-size: 16px;
+}
+
+.description-mobile a{
     color: var(--main-color);
 }
 
@@ -272,7 +283,10 @@ span{
     color: yellow;
 } 
 
-.description{
+.description-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     width: 420px;
     height: 180px;
@@ -282,12 +296,24 @@ span{
     z-index: 2;
 }
 
+.description-mobile{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 420px;
+    height: 180px;
+    border: 2px solid var(--main-color);
+    background: var(--bg-color-01);
+    margin-left: -180px;
+    z-index: 2; 
+}
 
 .img-port{
     opacity: 50%;
     width: 520px;
     height: 280px;
-    
+    background-image: url(/imagens/modified_image.png);
     border: 1px solid var(--main-color);
     margin-right: px;
     z-index: 1;
@@ -397,7 +423,7 @@ span{
 
 
 /* ======== Extra Small (xs) celular ========*/
-@media screen and (min-width:320px) and (max-width:768px){
+@media screen and (min-width:0px) and (max-width:768px){
     .menu-hamburguer {
         display: block;
     }
@@ -420,9 +446,6 @@ span{
         width: 100%;
     }
 
-    .home-content div{
-        text-align: center;
-    }
     .home-content h1, .sobre-countent h1 {
         font-size: 2.2rem;
         font-weight: 700;
@@ -441,6 +464,9 @@ span{
     }
     .home-img{
         display: none;
+    }
+    .home-content, .sobre-countent p{
+        font-size: 20px;
     }
     /*header{
         background-color: var(--color-01);
@@ -469,47 +495,44 @@ span{
     .img-port{
         width: 100%;
         opacity: 100%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
-    .description{
+    .description-principal{
         width: 100%;
         margin-left: 0px;
     }
+
+    .description-principal{
+        display: none;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .description-mobile{
+        display: flex;
+        width: 100%;
+        margin-left: 0px;
+    }
+
     .description-2{
         width: 100%;
         margin-right: 0px;
     }
 
+    .description-mobile p{
+        font-size: 18px;
+        
+    }
+
 }
 /* ======== media queries ========*/
 /*small (sm) smartphone normal*/
-/*@media screen and (max-width:768px){
-    .home-img, .sobre-img{
-        width: 65%;
-        max-width: 65%;
-        display: block;
+@media screen and (min-width:400px) and (max-width:768px){
+    .description-mobile p{
+        font-size: 21px;
         
-    }
-    .home-img{
-        display: none;
-    }
-
-    .linguagens-box{
-        width: 70%;
-    }
-    .portifolio-box{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .img-port{
-        margin-right: 0px;
-        opacity: 100%;
-    }
-
-    header{
-        background-color: var(--color-02);
     }
 }
 
@@ -535,7 +558,8 @@ span{
     }
 
     .home-content, .sobre-countent{
-        width: 50%;
+        width: 60%;
+        
     }
 
     .linguagens-container{
@@ -554,6 +578,11 @@ span{
     .img-port{
         margin-right: 0px;
         opacity: 100%;
+    }
+
+    .description-principal p{
+        font-size: 14px;
+        
     }
     /*header{
         background-color: var(--color-03);

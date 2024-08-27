@@ -36,13 +36,15 @@
     <!-- /Sessão Inicial -->
      <section class="Home" id="Home">
         <div class="home-content">
-            <h3>Olá, me chamo</h3>
-            <h1>Breno Muniz</h1>
-            <h3>Desenvolvedor <span>Front-End</span></h3>
+            <div class="home-content-txt">
+                <h3>Olá, me chamo</h3> 
+                <h1>Breno Muniz</h1>
+                <h3>Desenvolvedor <span>Front-End</span></h3>
             
-            <p>
+                <p>
                 Sou um apaixonado por tecnologia e estou seguindo minha jornada como desenvolvedor front-end. Com uma sede insaciável por conhecimento e uma forte motivação para crescer, Meu objetivo é encontrar um ambiente colaborativo onde eu possa contribuir e, ao mesmo tempo, adquirir novas habilidades que me permitam evoluir como desenvolvedor. Se você está à procura de um profissional dedicado, com sede de conhecimento e pronto para novos desafios, estou ansioso para fazer parte de sua equipe.
-            </p>
+                </p>
+            </div>
             <div class="midias-sociais">
                 <a href="https://www.linkedin.com/in/alex-muniz-55ba0415a/"target="_blank"><i class='bx bxl-linkedin' ></i></a>
                 <a href="https://github.com/breno-muniz" target="_blank"><i class='bx bxl-github'></i></a>
@@ -53,9 +55,9 @@
             </div>
         </div>
         
-        <div class="home-img">
-            <img src="imagens/profile-picture-pictures-sticker-cartoon_555764_wh860.png" alt="Foto de Perfil">
-        </div>
+        <!--<div class="home-img">
+            <img src="imagens/foto_Principal.png" alt="Foto de Perfil">
+        </div>/-->
         
      </section>
     <!-- Sessão Inicial/ -->
@@ -83,7 +85,7 @@
                 <ul class='bx bxl-sass' ></ul>
                 <h3>SASS</h3>
 
-                <p>SASS é uma ferramenta que facilita a criação de estilos para páginas web, ele permite o uso de recursos como variáveis e funções, que ajudam a reutilizar e modificar o código facilmente.</p> 
+                <p>SASS é uma ferramenta que facilita a criação de estilos para páginas web, ele permite o uso de recursos como variáveis e funções.</p> 
             </div>
 
             <div class="linguagens-box">
@@ -91,7 +93,7 @@
                 <li class='bx bxl-html5' ></li>
                 <h3>HTML5</h3>
 
-                <p>HTML é a linguagem usada para criar páginas na internet. Ele organiza o conteúdo como texto, imagens e links, definindo a estrutura do site.</p> 
+                <p>HTML é a linguagem usada para criar páginas na internet. Ele organiza o conteúdo como texto, imagens e links.</p> 
             </div>
 
             <div class="linguagens-box">
@@ -99,9 +101,16 @@
                 <a class='bx bxl-css3'></a>
                 <h3>CSS3</h3>
 
-                <p>CSS é uma linguagem usada para definir o visual de páginas web, como cores, fontes, e layout. Ele permite que os desenvolvedores estilizem o conteúdo do site e criando designs atraentes e consistentes.</p> 
+                <p>CSS é uma linguagem usada para definir o visual de páginas web, como cores, fontes, e layout.</p> 
             </div>
 
+            <div class="linguagens-box">
+                
+                <li class='bx bxl-git'></li>
+                <h3>Git</h3>
+
+                <p>O Git é uma ferramenta de controle de versão distribuído que permite aos desenvolvedores rastrear alterações no código-fonte.</p> 
+            </div>
             
            
         </div>
@@ -113,8 +122,8 @@
         <div class="portifolio-container">
             
             <div class="portifolio-box">
-                <a href="https://breno-muniz.github.io/Meu-Portifolio/" target="_blank" class="img-port" style="background-image: url(imagens/modified_image.png);"></a>
-                <div class="description">
+                <a href="https://breno-muniz.github.io/Meu-Portifolio/" target="_blank" class="img-port"></a>
+                <div class="description-principal">
                     <h3>Projeto Meu <span>Portifolio</span></h3>
                     <div class="tec-usadas">
                         <i class='bx bxl-javascript' class="jas"></i>
@@ -122,6 +131,17 @@
                         <a class='bx bxl-css3'></a>
                     </div>
                     <p>Este projeto é um portfólio pessoal desenvolvido para apresentar minhas habilidades, projetos e experiências como desenvolvedor front-end. Construído usando apenas HTML, CSS e JavaScript, o objetivo principal é criar uma interface moderna e responsiva.</p>
+                    <p>Acesse no <span><a href="https://github.com/breno-muniz/Meu-Portifolio" target="_blank"><i class='bx bxl-github git2'></i> GitHub</a></span></p>
+                </div>
+
+                <div class="description-mobile">
+                    <h3>Projeto Meu <span>Portifolio</span></h3>
+                    <div class="tec-usadas">
+                        <i class='bx bxl-javascript' class="jas"></i>
+                        <li class='bx bxl-html5' ></li>
+                        <a class='bx bxl-css3'></a>
+                    </div>
+                    <p>Este projeto é um portfólio pessoal desenvolvido para apresentar minhas habilidades</p>
                     <p>Acesse no <span><a href="https://github.com/breno-muniz/Meu-Portifolio" target="_blank"><i class='bx bxl-github git2'></i> GitHub</a></span></p>
                 </div>
             </div>
@@ -137,7 +157,7 @@
 
             <div class="portifolio-box">
                 <a href="" target="_blank" class="img-port" style="background-image: url(imagens/breve.jpg);"></a>
-                <div class="description">
+                <div class="description-principal">
                     <h3>Projeto em <span>desenvolvimento</span></h3>
                     <p>Projeto em desenvolvimento, aguarde.
                 </div>
@@ -147,9 +167,9 @@
     <!--sessão de Projetos/-->
     <!--/sessão sobre-->
     <section class="Sobre" id="Sobre">
-        <div class="sobre-img">
-            <img src="imagens/profile-picture-pictures-sticker-cartoon_555764_wh860.png" alt="">
-        </div>
+        <!--<div class="sobre-img">
+            <img src="imagens/foto_Principal.png" alt="foto_Principal">
+        </div>/-->
         <div class="sobre-countent">
             <h3>Sobre Mim</h3>
             <h1>Desenvolvedor <span>Front-End</span></h1>
