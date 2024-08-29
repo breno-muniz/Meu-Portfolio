@@ -104,15 +104,7 @@ span{
 
 .Sobre{
     flex-direction: column;
-}
-
-.sobre-img{
-    width: 47%;
-    height: 500px;
-    background: url(/imagens/EU\ Sobre.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    justify-content: space-evenly;
 }
 
 
@@ -125,16 +117,36 @@ span{
 }
 
 .sobre-countent{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     padding: 24px;
     flex-direction: row;
     border: 1px solid var(--color-06);
     background-color: var(--color-07);
-    display: flex;
-    justify-content: space-between;
+    max-width: 100%;
 }
 
+
+.sobre-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.sobre-img img{
+    width: 500px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid red;
+    max-width: 100%;
+}
+
+
 .sobre-desc{
-    width: 52%;
+    
     height: 500px;
     justify-content: center;
     text-align: justify;
@@ -465,11 +477,11 @@ span{
         flex-direction: column;
         gap: 1.2rem;
     }
-    .home-content, .sobre-countent{
+    .home-content {
         width: 100%;
     }
 
-    .home-content h1, .sobre-countent h1 {
+    .home-content h1{
         font-size: 2.2rem;
         font-weight: 700;
         line-height: 1.3;
@@ -485,11 +497,9 @@ span{
     .nav{
        display: none; 
     }
-    .home-img{
-        display: none;
-    }
+    
     .home-content, .sobre-countent p{
-        font-size: 20px;
+        font-size: 16px;
     }
     /*header{
         background-color: var(--color-01);
@@ -528,35 +538,21 @@ span{
     }
 
     .description-principal{
-        display: none;
         width: 100%;
         margin-left: 0px;
     }
-
-    .description-mobile{
-        display: flex;
-        width: 100%;
-        margin-left: 0px;
-    }
-
     .description-2{
         width: 100%;
         margin-right: 0px;
     }
 
-    .description-mobile p{
-        font-size: 18px;
-        
-    }
+    
 
 }
 /* ======== media queries ========*/
 /*small (sm) smartphone normal*/
 @media screen and (min-width:400px) and (max-width:768px){
-    .description-mobile p{
-        font-size: 21px;
-        
-    }
+
 }
 
 /*=====Tablete (md)=========*/
@@ -571,19 +567,11 @@ span{
         display: none;
     }
 
-    .Home, .Sobre{
-        flex-direction: row;
-        justify-content: space-evenly ;
-    }
-    .home-img, .sobre-img{
-        max-width: 35%;
-        display: block;
+    .sobre-desc p{
+        font-size: 16px;
     }
 
-    .home-content, .sobre-countent{
-        width: 60%;
-        
-    }
+
 
     .linguagens-container{
         grid-template-columns: auto auto;
@@ -607,18 +595,11 @@ span{
         font-size: 14px;
         
     }
-    /*header{
-        background-color: var(--color-03);
-    }*/
-
     
 }
 
 /*=====Notebook (lg)=========*/
 @media (min-width:992px){
-    .home-img, .sobre-img{
-        display: block;
-    }
     .linguagens-container{
         
         gap: 5px;
@@ -629,17 +610,6 @@ span{
 }
 /*=====Pc (xl)=========*/
 @media (min-width:1200px){
-    .home-img, .sobre-img{
-        
-        display: block;
-    }
-    .home-content h1{
-        font-size: 2.7rem;
-    }
-    .home-content h3 {
-        font-size: 2rem;
-    }
-
     .linguagens-container{
         grid-template-columns: auto auto auto;
     }
@@ -647,4 +617,7 @@ span{
     /*header{
         background-color: var(--color-05);
     }*/
+}
+
+@media (max-width:1200px){
 }
