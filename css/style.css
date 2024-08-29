@@ -2,20 +2,20 @@
 
 /*Set de Cores*/
 :root {
-    --main-color: #00eeff;
-    --text-color: #ffffff;
-    --bg-color-01: #1a3263;
-    --bg-color-02: #1c2d50;
+    --main-color: #0197F6;
+    --text-color: #F7F4F3;
+    --bg-color-secundaria: #010418;
+    --bg-color-principal: #02040F;
     --color--00: #0000001a;
 
     /*Extra Teste*/
-    --color-01: #4e73ec;
-    --color-02: #009539;
-    --color-03: #7950f2;
-    --color-04: #c00000;
-    --color-05: #232323;
-    --color-06: #9702fa;
-    --color-07: #ffffff;
+    --color-01: #448FA3;
+    --color-02: #68C5DB;
+    --color-03: #D7263D;
+    --color-04: #274060;
+    --color-05: #335C81;
+    --color-06: #1B2845;
+    --color-07: #090c1fad;
 }
 
 *{
@@ -33,7 +33,7 @@ html{
 }
 
 body{
-    background-color: var(--bg-color-02);
+    background-color: var(--bg-color-principal);
     color: var(--text-color);
 }
 header{
@@ -42,7 +42,7 @@ header{
     left: 0;
     width: 100%;
     padding: 1.1rem;
-    background-color: var(--bg-color-02);
+    background-color: var(--bg-color-principal);
 
     display: flex;
     justify-content: space-between;
@@ -68,7 +68,7 @@ h1{
     left: 0;
     width: 100%;
     padding: 1rem;
-    background-color: var(--bg-color-01);
+    background-color: var(--bg-color-secundaria);
 }
 
 .nav a, .nav-responsive a {
@@ -102,38 +102,47 @@ span{
     align-items: center;
 }
 
-.home-img img, .sobre-img img{
-    width: 100%;
-    box-shadow: #00eeff;
-    box-shadow: 0 0 4px 5px #00b5fd6c;
-}
-/*Animação*/
-.home-img img {
-    position: relative;
-    animation: flutuar 5s ease-in-out infinite alternate;
+.Sobre{
+    flex-direction: column;
 }
 
-@keyframes flutuar{
-    0%{
-        top: 0;
-    }
-    100%{
-        top: 30px;
-    }
+.sobre-img{
+    width: 47%;
+    height: 500px;
+    background: url(/imagens/EU\ Sobre.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
+
 
 .home-content, .sobre-countent{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 80%;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .sobre-countent{
-    border: 1px solid var(--color-07);
-    background-color: #1d335f;
-    width: 80%;
+    padding: 24px;
+    flex-direction: row;
+    border: 1px solid var(--color-06);
+    background-color: var(--color-07);
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre-desc{
+    width: 52%;
+    height: 500px;
+    justify-content: center;
+    text-align: justify;
+}
+
+.sobre-desc p{
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
 }
 
 .home-content h3, .sobre-countent h3{
@@ -143,22 +152,23 @@ span{
 .home-content h1, .sobre-countent h1{
     font-weight: 700;
     line-height: 1.3;
-
     font-size: 1.6rem;
+}
+.Sobre{
+    background-color: var(--bg-color-secundaria);
 }
 
 .home-content p, .sobre-countent p{
-    margin-top: 1.2rem;
+    align-items: center;
     text-align: justify;
     font-size: 22px;
-
 }
 
 .Linguagens h2,
 .Projetos h2,
-.Contatos h2 {
-    font-size: 2.2rem;
-    margin-top: -50px;
+.Sobre h2 {
+    font-size: 48px;
+    margin-top: -40px;
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -186,9 +196,9 @@ span{
     padding: 2rem 1rem 2.5rem;
     border-radius: 1.2rem;
     text-align: center;
-    border: solid 0.15rem var(--bg-color-01);
-    background-color: var(--bg-color-02);
-    transition: 0.5 ease;
+    border: solid 0.5px var(--color-05);
+    background-color: var(--bg-color-principal);
+    transition: 0.5s ease;
 }
 
 .linguagens-container .linguagens-box:hover{
@@ -225,7 +235,7 @@ span{
 }
 
 .Projetos{
-    background-color: var(--bg-color-02);
+    background-color: var(--bg-color-secundaria);
 }
 
 .portifolio-container{
@@ -250,11 +260,12 @@ span{
 }
 .description-2{
     text-align: center;
-    width: 420px;
-    height: 180px;
+    width: 560px;
+    height: 160px;
     border: 2px solid var(--main-color);
-    background: var(--bg-color-01);
+    background: var(--bg-color-secundaria);
     margin-right: -180px;
+    font-size: 20px;
     z-index: 2;
 }
 .description-principal a{
@@ -262,7 +273,8 @@ span{
 }
 
 .description-principal p{
-    font-size: 16px;
+    font-size: 18px;
+    margin: 1px 1px 1px 1px;
 }
 
 .description-mobile a{
@@ -270,19 +282,17 @@ span{
 }
 
 .tec-usadas a{
-    font-size: 25px;
+    font-size: 30px;
     color: var(--main-color);
     
 } 
-
-
 .tec-usadas li{
-    font-size: 25px;
+    font-size: 30px;
     color: orangered;
 } 
 
 .tec-usadas i{
-    font-size: 25px;
+    font-size: 30px;
     color: yellow;
 } 
 
@@ -291,11 +301,12 @@ span{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 420px;
-    height: 180px;
+    width: 560px;
+    height: 160px;
     border: 2px solid var(--main-color);
-    background: var(--bg-color-01);
+    background: var(--bg-color-secundaria);
     margin-left: -180px;
+    font-size: 20px;
     z-index: 2;
 }
 
@@ -307,16 +318,19 @@ span{
     width: 420px;
     height: 180px;
     border: 2px solid var(--main-color);
-    background: var(--bg-color-01);
+    background: var(--bg-color-secundaria);
     margin-left: -180px;
     z-index: 2; 
 }
 
 .img-port{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     opacity: 50%;
-    width: 520px;
-    height: 280px;
-    background-image: url(/imagens/modified_image.png);
+    width: 590px;
+    height: 290px;
+    background-color: var(--color-06);
     border: 1px solid var(--main-color);
     margin-right: px;
     z-index: 1;
@@ -326,6 +340,12 @@ span{
     transition: 0.2s ease;
     opacity: 100%;
     transform: scale(1.05);
+}
+
+.img-port{
+    font-size: 88px;
+    color: var(--text-color);
+    
 }
 
 .midias-sociais{
@@ -362,7 +382,7 @@ span{
 
 .midias-sociais a:hover{
     background-color: var(--main-color);
-    color: var(--bg-color-02);
+    color: var(--bg-color-principal);
     box-shadow: var(--main-color);
     transform: scale(1.3);
     transition: 0.5 ease;
@@ -380,7 +400,7 @@ span{
     background-color: inherit;
     border: solid 0.5px var(--main-color);
     border-radius: 2rem;
-    color: var(--color-07);
+    color: var(--main-color);
     font-weight: 600;
     letter-spacing: 0.1rem;
     transition: 0.5s ease;
@@ -389,7 +409,7 @@ span{
 
 .btn:hover{
     box-shadow: 0 0 0.3rem var(--main-color);
-    background-color: var(--main-color);
+    background-color: var(--color-06);
     transform: scale(1.05);
     cursor: pointer;
 }
@@ -597,7 +617,6 @@ span{
 /*=====Notebook (lg)=========*/
 @media (min-width:992px){
     .home-img, .sobre-img{
-        max-width: 35%;
         display: block;
     }
     .linguagens-container{
@@ -611,7 +630,7 @@ span{
 /*=====Pc (xl)=========*/
 @media (min-width:1200px){
     .home-img, .sobre-img{
-        max-width: 25%;
+        
         display: block;
     }
     .home-content h1{
