@@ -33,7 +33,7 @@ html{
 }
 
 body{
-    background-color: var(--bg-color-01);
+    background-color: var(--bg-color-02);
     color: var(--text-color);
 }
 header{
@@ -42,7 +42,7 @@ header{
     left: 0;
     width: 100%;
     padding: 1.1rem;
-    background-color: var(--bg-color-01);
+    background-color: var(--bg-color-02);
 
     display: flex;
     justify-content: space-between;
@@ -69,8 +69,6 @@ h1{
     width: 100%;
     padding: 1rem;
     background-color: var(--bg-color-01);
-    
-    
 }
 
 .nav a, .nav-responsive a {
@@ -132,6 +130,12 @@ span{
     align-items: center;
 }
 
+.sobre-countent{
+    border: 1px solid var(--color-07);
+    background-color: #1d335f;
+    width: 80%;
+}
+
 .home-content h3, .sobre-countent h3{
     font-weight: 700;
     font-size: 1.6rem;
@@ -159,7 +163,6 @@ span{
     text-align: center;
 }
 .Linguagens{
-    box-shadow: 0 0 40px 10px #00b5fd6c;
     max-width: 100%;
     width: 100%;
 }
