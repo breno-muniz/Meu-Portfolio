@@ -262,15 +262,16 @@ span{
     margin-bottom: 5%;
 }
 
-.portifolio-container{
+.portfolio-container{
     max-width: 1200px;
     margin: 0 auto;
     padding: 16px 24px;
 }
 
-.portifolio-box{
+.portfolio-box{
     margin: 0 auto;
     padding: 32px 40px;
+    max-width: 100%;
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -300,17 +301,17 @@ span{
     transform: translate(-50%, -50%) translate3d(-1000px, 0,0) skewX(30deg);
 }
 
-.portifolio-box a {
+.portfolio-box a {
     padding: 16px 24px;
 }
 
-.portifolio-box h3 {
+.portfolio-box h3 {
     color: var(--text-color);
     margin-right: 8px;
     font-size: 32px;
 }
 
-.portifolio-box h4 {
+.portfolio-box h4 {
     color: var(--color-04);
     margin-right: 8px;
     font-size: 24px;
@@ -319,10 +320,6 @@ span{
 .border-div{
     max-width: 100%;
     border: 1px solid var(--color-04);
-}
-
-.description-mobile a{
-    color: var(--main-color);
 }
 
 .tec-usadas a{
@@ -339,15 +336,6 @@ span{
     font-size: 30px;
     color: yellow;
 } 
-
-
-.img-port img{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    max-height: 100%;
-}
 
 .midias-sociais{
     display: flex;
@@ -388,9 +376,6 @@ span{
     transform: scale(1.3);
     transition: 0.5 ease;
 }
-
-
-
 
 
 
@@ -444,29 +429,6 @@ span{
 
 /*==Menu Hamburguer==*/
 
-@media screen and (min-width:0px) and (max-width: 400px) {
-    .sobre-desc{
-        display: none;        
-    }
-    .sobre-desc-mobile{
-        display: block;
-    }
-    .description-principal{
-        display: none;
-    }
-    .description-mobile{
-        display: block;
-        width: 100%;
-    }
-
-    .description-2 h3{
-        font-size: 19px;
-    }
-    .description-2 p{
-        font-size: 16px;
-    }
-}
-
 /* ======== Extra Small (xs) celular ========*/
 @media screen and (min-width:0px) and (max-width:768px){
     .menu-hamburguer {
@@ -512,42 +474,10 @@ span{
     /*header{
         background-color: var(--color-01);
     }*/
-    .portifolio-container{
-       align-items: start;
-       
-    }
-    .portifolio-box{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        gap: 10px;
-    }
-
-    .portifolio-box-2{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        gap: 10px;
-    }
-
-    .img-port{
-        width: 100%;
-        opacity: 100%;
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    .description-principal{
-        width: 100%;
-        margin-left: 0px;
-    }
-
-    .description-2{
-        width: 100%;
-        margin-right: 0px;
-        height: 100px;
+    
+    
+    .img-project{
+        display: none;
     }
 
     
@@ -570,19 +500,9 @@ span{
     .linguagens-container{
         grid-template-columns: auto auto;
     }
-    .portifolio-box{
-        max-width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-    .portifolio-box-2{
-        max-width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-    .img-port{
-        margin-right: 0px;
-        opacity: 100%;
+    
+    .img-project{
+        display: none;
     }
 
     
