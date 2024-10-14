@@ -42,9 +42,8 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.1rem;
+    padding: 16px;
     background-color: var(--bg-color-principal);
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,7 +55,7 @@ h1{
 }
 
 .logo{
-    font-size: 1.7rem;
+    font-size: 32px;
     color: var(--text-color);
     font-weight: 600;
     cursor: default;
@@ -68,14 +67,14 @@ h1{
     top: 100%;
     left: 0;
     width: 100%;
-    padding: 1rem;
+    padding: 16px;
     background-color: var(--bg-color-principal);
 }
 
 .nav a, .nav-responsive a {
     font-size: 1.2rem;
     color: var(--text-color);
-    padding: 0.5rem 1rem;
+    padding: 8px 16px;
     transition: 0.4s ease;
     /*border: solid green;*/
     
@@ -88,9 +87,10 @@ h1{
 
 section{
     min-height: 100vh;
-    padding: 6rem 6rem 2rem;
+    padding: 56px 48px;
     
-    /*border: solid red;*/
+    max-width: 100%;
+   /* border: solid red;*/
 }
 
 span{
@@ -98,21 +98,17 @@ span{
 }
 .Home, .Sobre{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.Sobre{
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
+    
 }
 
 
 .home-content, .sobre-countent{
     display: flex;
     flex-direction: column;
-    width: 80%;
+    max-width: 100%;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -125,7 +121,7 @@ span{
     flex-direction: row;
     border: 1px solid var(--color-06);
     background-color: var(--color-07);
-    max-width: 100%;
+    max-width: 80%;
     
 }
 
@@ -178,29 +174,22 @@ span{
     background-color: var(--bg-color-secundaria);
 }
 
-.home-content p{
-    align-items: center;
-    text-align: justify;
-    font-size: 22px;
-}
-
 .Linguagens h2,
 .Projetos h2,
 .Sobre h2 {
     font-size: 48px;
-    margin-top: -40px;
-    margin-bottom: 1rem;
     text-align: center;
+   
 }
 .Linguagens{
     max-width: 100%;
-    width: 100%;
 }
 
 .linguagens-container{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    padding: 32px 32px;
     justify-content: center;
 }
 
@@ -212,38 +201,38 @@ span{
     height: 250px;
 }
 
-.linguagens-container .linguagens-box{
-    padding: 2rem 1rem 2.5rem;
+.linguagens-box{
+    padding: 8px 16px;
     border-radius: 1.2rem;
     text-align: center;
-    border: solid 0.5px var(--color-05);
+    border: solid 0.5px var(--main-color2);
     background-color: var(--bg-color-principal);
     transition: 0.5s ease;
 }
 
-.linguagens-container .linguagens-box:hover{
+.linguagens-box:hover{
     border-color: var(--main-color);
     transform: scale(1.01);
 }
 
 .linguagens-box i{
-    font-size: 4.3rem;
+    font-size: 66px;
     color: yellow;
 }
 .linguagens-box a{
-    font-size: 4.3rem;
+    font-size: 66px;
     color: var(--main-color);
 }
 .linguagens-box li{
-    font-size: 4.3rem;
+    font-size: 66px;
     color: orangered;
 }
 .linguagens-box ul{
-    font-size: 4.3rem;
+    font-size: 66px;
     color: rebeccapurple;
 }
 .linguagens-box h3 {
-    font-size: 1.5rem;
+    font-size: 24px;;
 }
 
 .linguagens-box p {
@@ -259,18 +248,18 @@ span{
 }
 
 .Projetos h2{
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 
 .portfolio-container{
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 16px 24px;
+    
 }
 
 .portfolio-box{
     margin: 0 auto;
-    padding: 32px 40px;
+    
     max-width: 100%;
     position: relative;
     display: flex;
@@ -301,9 +290,7 @@ span{
     transform: translate(-50%, -50%) translate3d(-1000px, 0,0) skewX(30deg);
 }
 
-.portfolio-box a {
-    padding: 16px 24px;
-}
+
 
 .portfolio-box h3 {
     color: var(--text-color);
@@ -315,6 +302,7 @@ span{
     color: var(--color-04);
     margin-right: 8px;
     font-size: 24px;
+
 }
 
 .border-div{
@@ -340,6 +328,7 @@ span{
 .midias-sociais{
     display: flex;
     justify-content: center;
+    max-width: 100%;
 
 }
 .midias-sociais img{
@@ -445,19 +434,23 @@ span{
         padding: 6rem 2.5rem;
     }
 
-    .Home, .Sobre{
+    .Sobre{
         flex-direction: column;
         gap: 1.2rem;
+    
     }
-    .home-content {
-        width: 100%;
+    
+
+    .home-content h3 {
+        font-weight: 700;
+        font-size: 2.2rem;
     }
 
     .home-content h1{
-        font-size: 2.2rem;
+        font-size: 2.8rem;
         font-weight: 700;
-        line-height: 1.3;
     }
+
     .linguagens-container{
         flex-direction: column;
         align-items: center;
@@ -480,13 +473,19 @@ span{
         display: none;
     }
 
+    .sobre-desc{
+        display: none;
+    }
     
+    .sobre-desc-mobile{
+        display: block;
+    }
 
 }
 
 
 /*=====Tablete (md)=========*/
-@media screen and (min-width:768px) and (max-width:992px){
+@media screen and (min-width:768px) and (max-width:1024px){
     .menu-hamburguer{
         display: none;
     }
@@ -509,9 +508,8 @@ span{
 }
 
 /*=====Notebook (lg)=========*/
-@media (min-width:992px){
+@media (min-width:1024px){
     .linguagens-container{
-        
         gap: 5px;
     }
 
