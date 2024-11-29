@@ -1,0 +1,10 @@
+.app-footer{
+    @include responsive(s){
+        flex-direction: column;
+    }
+}
+
+.app-store-footer, .app-play-footer{
+    margin: 0;
+    margin-top: 8px;
+}

@@ -1,0 +1,92 @@
+
+.swiper-container{
+    width: 60%;
+    height: 560px;
+    /*overflow: hidden;*/
+    position: relative;
+    
+}
+
+.swiper-slide{
+    max-width: 100%;
+    max-height: 100vh;
+    padding: 24px 36px;
+    border-radius: 20px;
+    margin: 8px 16px;
+    background-color: $bg-color-secondary;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    box-shadow: 0px 17px 31px rgba(0, 99, 247, 0.27),
+    0px 5.125px 9.34559px rgba(5, 72, 255, 0.176),
+    0px 2.12866px 3.88168px rgba(6, 95, 155, 0.135),
+    0px 0.769896px 1.40393px rgba(0, 99, 247, 0.094);
+
+
+    @include responsive(s){
+        max-width: 340px;
+    }
+}
+
+.button-next{
+    position: absolute;
+    right: 5px;
+    top: 600px;
+
+    width: 36px;
+    height: 36px;
+    max-width: 100%;
+    cursor: pointer;
+
+    @include responsive (s){
+        display: none;
+    }
+   
+}
+
+.button-prev{
+    position: absolute;
+    right: 781px;
+    top: 600px;
+
+    width: 36px;
+    height: 36px;
+    max-width: 100%;
+    cursor: pointer;
+    
+    @include responsive (s){
+        display: none;
+    }
+}
+
+.photo-profile{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photo-1{
+    background-image: url('../img/people1.png');
+}
+
+.photo-2{
+    background-image: url('../img/people2.png');
+}
+
+.photo-3{
+    background-image: url('../img/people3.png');
+}
+
+.photo-4{
+    background-image: url('../img/people4.png');
+}
+
+.photo-5{
+    background-image: url('../img/people5.png');
+}

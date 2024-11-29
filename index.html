@@ -3,73 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Breno Muniz</title>
+    <title>Portfólio Alex Muniz</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="imagens/code-curly-regular-24.png">
-    <!--Box icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header>
-        <a href="" class="logo">Dev <span>Breno Muniz</span></a>
-        <!--asdasdas-->
-        <div class="nav">
-            <a href="#Home">Home</a>
-            <a href="#Projetos">Projetos</a>
-            <a href="#Linguagens">Tecnologias</a>
-            <a href="#Sobre">Sobre</a>
-        </div>
+    
+    <header id="header">
+        <nav class="navbar-mobile">
+            <div class="bxl" id="bx"></div>
+            <div class="logo">
+                <a href="" class="logo"><img src="imagens/logo.png" alt=""></a>
+            </div>
+        </nav>
         
-        <div class="nav-responsive" id="nav-responsive">
-            <div class="fechaMenu isClose"></div>
-            <a href="#Home">Home</a>
-            <a href="#Linguagens">Hablidades</a>
-            <a href="#Projetos">Projetos</a>
-            <a href="#Sobre">Sobre</a>
-        </div>
+        <nav class="navbar-desktop ">
+            <div class="logo">
+                <a href="" class="logo"><img src="imagens/logo.png" alt=""></a>
+            </div>
+            <div class="itens-nav bold">
+                <a href="#Home" class="nav-link-desktop p-2">Home</a>
+                <a href="#Projetos" class="nav-link-desktop p-2">Hablidades</a>
+                <a href="#Linguagens" class="nav-link-desktop p-2">Projetos</a>
+                <a href="#Sobre" class="nav-link-desktop p-2">Sobre</a>
+            </div>
+            
+        </nav>
 
-        <div class="menu-hamburguer">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
+        <nav class="menu-mobile" id="menu-mobile">
+            <ul class="nav-list-mobile">
+                <li><a href="" class="navlink-mobile m-3"><h5>Home</h5></a></li>
+                <li><a href="" class="navlink-mobile m-3"><h5>Hablidades</h5></a></li>
+                <li><a href="" class="navlink-mobile m-3"><h5>Projetos</h5></a></li>
+                <li><a href="" class="navlink-mobile m-3"><h5>Sobre</h5></a></li>
+            </ul>
+        </nav>
     </header>
     <!-- /Sessão Inicial -->
-     <section class="Home" id="Home">
-        <div class="home-content">
-            <div class="home-content-txt">
-                <h1>Breno Muniz</h1>
-                <h3>Desenvolvedor <span>Front-End</span></h3>
-            </div>
-            <div class="midias-sociais">
-                <a href="https://www.linkedin.com/in/alex-muniz-55ba0415a/"target="_blank"><i class='bx bxl-linkedin' ></i></a>
-                <a href="https://github.com/breno-muniz" target="_blank"><i class='bx bxl-github'></i></a>
-            </div>
+     <section class="container" id="Home">
+        
+            <div class="hero flex-center tex flex-column m-5">
+                <div class="cicles-bg"></div>
+                <div class="flex-center flex-column p-3 m-2">
+                    <h1>Alex Muniz</h1>
+                    <h3>Desenvolvedor <span>Front-End</span></h3>
+                </div>
+                <div class="midias-sociais flex-center flex-space-between p-2 m-2">
+                    <a href="https://www.linkedin.com/in/alex-muniz-55ba0415a/"target="_blank"><i class='bx bxl-linkedin mr-2' ></i></a>
+                    <a href="https://github.com/breno-muniz" target="_blank"><i class='bx bxl-github'></i></a>
+                </div>
 
-            <div class="cv">
-                <a href="https://drive.google.com/file/d/1FpUFLhMkCfczJ-TDuWXazMXJAg6d22yo/view?usp=drive_link" download="curriculo Alex.pdf" target="_blank" class="btn">Download CV</a>
+                <div class="cv flex-center m-2">
+                    <a href="https://drive.google.com/file/d/1FpUFLhMkCfczJ-TDuWXazMXJAg6d22yo/view?usp=drive_link" download="curriculo Alex.pdf" target="_blank" class="btn">Download CV</a>
+                </div>
             </div>
-        </div>
         
      </section>
     <!-- Sessão Inicial/ -->
     <!--/sessão de Projetos-->
-    <section class="Projetos" id="Projetos">
-        <h2><span>PROJETOS</span></h2>
-        <div class="portfolio-container">
-            
-            <div class="portfolio-box">
-                <h4>01.</h4>
-                <a href="https://breno-muniz.github.io/Meu-Portifolio/" target="_blank"><h3>Portfólio</h3></a>
-                <img src="imagens/modified_image.png" class="img-project" alt="">
-                <div class="tec-usadas">
-                    <li class='bx bxl-html5' ></li>
-                    <a class='bx bxl-css3'></a>
-                    <i class='bx bxl-javascript' class="jas"></i>
+    <section class="container flex-center flex-column border">
+        <div class="flex-center m-2"><h1><span>PROJETOS</span></h1></div>
+    
+        <section class="container-swiper flex-center">
+            <div class="swiper-container mb-3 border">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide m-5">
+                        <div class="img"></div>
+                        <h4>U.Bank</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Molestiae, quas deserunt expedita tempore dignissimos 
+                            modi eos consectetur consequuntur vitae consequatur hic 
+                            alias ipsum doloribus, voluptas facere aut minima animi
+                             doloremque?</p>
+                    </div>
+                    <div class="swiper-slide m-5">
+                        <div class="img"></div>
+                        <h4>Portfólio</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Molestiae, quas deserunt expedita tempore dignissimos 
+                            modi eos consectetur consequuntur vitae consequatur hic 
+                            alias ipsum doloribus, voluptas facere aut minima animi
+                             doloremque?</p>
+                    </div>
                 </div>
-            </div>
-           <div class="border-div"></div>
-    </section>
+                <div class="button-next">
+                    <i class='bx bxs-right-arrow-square'></i>
+                </div>
+                <div class="button-prev">
+                    <i class='bx bxs-left-arrow-square' ></i>
+                </div>
+            </div>   
+        </section>
+    </section>   
+
     <!--sessão de Projetos/-->
     <!--/Seção Linguagens-->
     <section class="Linguagens" id="Linguagens">
@@ -147,4 +175,29 @@
     <!--sessão sobre/-->
 </body>
 <script src="Javascript/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    AOS.init({
+        easing: "ease-out-quart", // Curva de Transição
+        duration: 1000, // duração da transição
+        once: true // animar só uma vez
+    });
+</script>
+
+<script>
+    var swiper = new Swiper('.swiper-container',{
+        slidesPerView: 'auto',
+        spaceBeteween: 40,
+        grabCursor: true,
+        pagination:{
+            el: 'swiper-pagination',
+            clickable: true,
+            type: 'progressbar',
+        },
+        navigation:{
+            nextEl: '.button-next',
+            prevEl: '.button-prev'
+        },
+    });
+</script>
 </html>

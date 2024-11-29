@@ -1,0 +1,46 @@
+// cores do projeto
+
+//brand colors
+
+$main-color: #0197F6;
+$main-color-2: #37adf7;
+$text-color: #F7F4F3;
+
+$bg-color-primary:  #02040F;
+$bg-color-secondary: #010418;
+
+
+// neutral colors
+$black-normal: #232224;
+$black-dark: #161617;
+$black-ligth: #353436;
+
+$white-normal:#F7F2FA ;
+$white-dark: #EDEAEF;
+$white-ligth: #FEFBFF;
+
+// gray colors
+$gray-1: #454446;
+$gray-2: #555456;
+$gray-3: #666566;
+$gray-4: #767576;
+$gray-5: #868587;
+$gray-6: #969597;
+$gray-7: #A6A6A7;
+
+//auxliary colors
+$red-normal: #EB3D3D;
+$red-dark: #D03333;
+$red-ligth: #F05454;
+
+$green-normal: #32D957;
+$green-dark: #28BB49;
+$green-ligth: #50E170;
+
+$yellow-normal: #FFCE52;
+$yellow-dark: #D9B043;
+$yellow-ligth:#FFD76B;
+
+.color-white{
+    color: $white-ligth;
+}
