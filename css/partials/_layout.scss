@@ -49,10 +49,10 @@ $container-s: 540px;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    background-color: $bg-color-primary;
     flex-direction: row;
     overflow: hidden;
-
+    position: relative;
     @include responsive(s){
         flex-direction: column;
 
@@ -195,12 +195,4 @@ $container-s: 540px;
 
 //PROJETOS
 
-
-
-.hero-projetos{
-    height: 100%;
-    
-    @include responsive(s){
-        height: auto;
-    }
-}
+  

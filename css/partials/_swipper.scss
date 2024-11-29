@@ -41,15 +41,13 @@
     max-width: 100%;
     cursor: pointer;
 
-    @include responsive (s){
-        display: none;
-    }
+    
    
 }
 
 .button-prev{
     position: absolute;
-    right: 781px;
+    
     top: 600px;
 
     width: 36px;
@@ -57,9 +55,7 @@
     max-width: 100%;
     cursor: pointer;
     
-    @include responsive (s){
-        display: none;
-    }
+    
 }
 
 .photo-profile{
