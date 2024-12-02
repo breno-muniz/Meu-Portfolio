@@ -169,14 +169,23 @@
 
 .hero-linguagens {
   display: flex;
+  max-width: 100%;
+}
+@media screen and (max-width: 960px) {
+  .hero-linguagens {
+    flex-direction: column;
+  }
 }
 
 .linguagens-container {
   background-color: #010418;
   display: flex;
   flex-direction: row;
-  height: 40%;
+  height: 50%;
   border-radius: 16px;
+  max-width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
   box-shadow: 0px 17px 31px rgba(0, 99, 247, 0.27), 0px 5.125px 9.34559px rgba(5, 72, 255, 0.176), 0px 2.12866px 3.88168px rgba(6, 95, 155, 0.135), 0px 0.769896px 1.40393px rgba(0, 99, 247, 0.094);
 }
 
