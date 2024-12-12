@@ -244,6 +244,32 @@ $container-s: 540px;
     0px 0.769896px 1.40393px rgba(0, 99, 247, 0.094);
 }
 
-.linguagens-box{
+.sobre-countent{
+    border: 1px solid gold;
+    @include responsive(s){
+        flex-direction: column;
+    }
+}
+
+.sobre-img img{
     
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    max-width: 100%;
+    height: 560px;
+    border-radius: 25px;
+    border: 2px solid $main-color;
+}
+
+.sobre-desc{
+    
+    max-width: 100%;
+    height: 560px;
+    border-radius: 25px;
+    justify-content: center;
+    background-color: $bg-color-secondary;
+
+    
+    border: 2px solid $main-color;
 }

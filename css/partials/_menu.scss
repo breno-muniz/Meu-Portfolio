@@ -28,8 +28,10 @@ header{
 }
 
 .logo{
+    background-image: url(/imagens/logo.png);
     width: 52px;
     height: 52px;
+    background-size: cover;
     background-color: $main-color;
     z-index: 800;
     display: flex;
