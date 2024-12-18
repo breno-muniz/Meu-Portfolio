@@ -195,10 +195,10 @@ $container-s: 540px;
 
 //PROJETOS
 .img{
-    height: 360px;
+    height: 70%;
     border-radius: 16px;
     background-color: $main-color;
-
+    width: 100%;
 }
   
 
@@ -220,7 +220,7 @@ $container-s: 540px;
     flex-direction: row; 
     height: 50%; 
     border-radius: 16px;  
-    max-width: 100%;
+    max-width: 40%;
     flex-wrap: wrap;
     align-items: center;
     
@@ -230,19 +230,21 @@ $container-s: 540px;
     0px 0.769896px 1.40393px rgba(0, 99, 247, 0.094);
 }
 
-
-
 .resumo{
     background-color: $bg-color-secondary;
     border-radius: 16px;
-    height: 548px;
+    height: 50vh;
 
-
+    max-width: 60%;
     box-shadow: 0px 17px 31px rgba(0, 99, 247, 0.27),
     0px 5.125px 9.34559px rgba(5, 72, 255, 0.176),
     0px 2.12866px 3.88168px rgba(6, 95, 155, 0.135),
     0px 0.769896px 1.40393px rgba(0, 99, 247, 0.094);
 }
+
+
+
+
 
 .sobre-countent{
     background-color: $bg-color-secondary;

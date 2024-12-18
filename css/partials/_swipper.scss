@@ -2,7 +2,7 @@
 .swiper-container{
     width: 60%;
     height: 560px;
-    /*overflow: hidden;*/
+    
     position: relative;
     
 }
@@ -15,7 +15,7 @@
     margin: 8px 16px;
     background-color: $bg-color-secondary;
     
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -61,31 +61,5 @@
     
 }
 
-.photo-profile{
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
 
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
-.photo-1{
-    background-image: url('../img/people1.png');
-}
-
-.photo-2{
-    background-image: url('../img/people2.png');
-}
-
-.photo-3{
-    background-image: url('../img/people3.png');
-}
-
-.photo-4{
-    background-image: url('../img/people4.png');
-}
-
-.photo-5{
-    background-image: url('../img/people5.png');
-}

@@ -162,9 +162,10 @@
 }
 
 .img {
-  height: 360px;
+  height: 70%;
   border-radius: 16px;
   background-color: #0197F6;
+  width: 100%;
 }
 
 .hero-linguagens {
@@ -183,7 +184,7 @@
   flex-direction: row;
   height: 50%;
   border-radius: 16px;
-  max-width: 100%;
+  max-width: 40%;
   flex-wrap: wrap;
   align-items: center;
   box-shadow: 0px 17px 31px rgba(0, 99, 247, 0.27), 0px 5.125px 9.34559px rgba(5, 72, 255, 0.176), 0px 2.12866px 3.88168px rgba(6, 95, 155, 0.135), 0px 0.769896px 1.40393px rgba(0, 99, 247, 0.094);
@@ -192,7 +193,8 @@
 .resumo {
   background-color: #010418;
   border-radius: 16px;
-  height: 548px;
+  height: 50vh;
+  max-width: 60%;
   box-shadow: 0px 17px 31px rgba(0, 99, 247, 0.27), 0px 5.125px 9.34559px rgba(5, 72, 255, 0.176), 0px 2.12866px 3.88168px rgba(6, 95, 155, 0.135), 0px 0.769896px 1.40393px rgba(0, 99, 247, 0.094);
 }
 
@@ -732,7 +734,7 @@ header {
 }
 
 .logo {
-  background-image: url(/imagens/logo.png);
+  background-image: url(../imagens/logo.png);
   width: 52px;
   height: 52px;
   background-size: cover;
@@ -892,7 +894,6 @@ span {
 .swiper-container {
   width: 60%;
   height: 560px;
-  /*overflow: hidden;*/
   position: relative;
 }
 
@@ -903,7 +904,7 @@ span {
   border-radius: 20px;
   margin: 8px 16px;
   background-color: #010418;
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -933,34 +934,6 @@ span {
   height: 36px;
   max-width: 100%;
   cursor: pointer;
-}
-
-.photo-profile {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.photo-1 {
-  background-image: url("../img/people1.png");
-}
-
-.photo-2 {
-  background-image: url("../img/people2.png");
-}
-
-.photo-3 {
-  background-image: url("../img/people3.png");
-}
-
-.photo-4 {
-  background-image: url("../img/people4.png");
-}
-
-.photo-5 {
-  background-image: url("../img/people5.png");
 }
 
 .bx {
