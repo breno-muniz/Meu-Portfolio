@@ -25,8 +25,8 @@
             </div>
             <div class="itens-nav bold">
                 <a href="#Home" class="nav-link-desktop p-2">Home</a>
-                <a href="#Projetos" class="nav-link-desktop p-2">Hablidades</a>
-                <a href="#Linguagens" class="nav-link-desktop p-2">Projetos</a>
+                <a href="#Projetos" class="nav-link-desktop p-2">Projetos</a>
+                <a href="#Linguagens" class="nav-link-desktop p-2">Tecnologias</a>
                 <a href="#Sobre" class="nav-link-desktop p-2">Sobre</a>
             </div>
             
@@ -34,10 +34,10 @@
 
         <nav class="menu-mobile" id="menu-mobile">
             <ul class="nav-list-mobile">
-                <li><a href="" class="navlink-mobile m-3"><h5>Home</h5></a></li>
-                <li><a href="" class="navlink-mobile m-3"><h5>Hablidades</h5></a></li>
-                <li><a href="" class="navlink-mobile m-3"><h5>Projetos</h5></a></li>
-                <li><a href="" class="navlink-mobile m-3"><h5>Sobre</h5></a></li>
+                <li><a href="#Home" class="navlink-mobile m-3"><h5>Home</h5></a></li>
+                <li><a href="#Projetos" class="navlink-mobile m-3"><h5>Projetos</h5></a></li>
+                <li><a href="#Linguagens" class="navlink-mobile m-3"><h5>Tecnologias</h5></a></li>
+                <li><a href="#Sobre" class="navlink-mobile m-3"><h5>Sobre</h5></a></li>
             </ul>
         </nav>
     </header>
@@ -56,106 +56,83 @@
                 </div>
 
                 <div class="cv flex-center m-2">
-                    <a href="https://drive.google.com/file/d/1FpUFLhMkCfczJ-TDuWXazMXJAg6d22yo/view?usp=drive_link" download="curriculo Alex.pdf" target="_blank" class="btn">Download CV</a>
+                    <a href="https://drive.google.com/file/d/14idGupdGNon4DtC3-8-SQHCAecE1lp_e/view?usp=drive_link" download="curriculo Alex.pdf" target="_blank" class="btn">Download CV</a>
                 </div>
             </div>
         
      </section>
     <!-- Sessão Inicial/ -->
     <!--/sessão de Projetos-->
-    <section class="container flex-center flex-column">
-        
-        <div class="flex-center m-2"><h1><span>PROJETOS</span></h1></div>
-
+    <section class="container ct-projetos flex-center flex-column" id="Projetos">
+        <h1><span>PROJETOS</span></h1>
+    
         <section class="container-swiper flex-center">
             <div class="swiper-container mb-3">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide m-5 flex-center">
                         <div class="img m-2">
-                            <img src="" alt="">
+                            <a href="https://breno-muniz.github.io/Projeto-U.bank/" target="_blank" class="project-link">
+                                <img src="/imagens/U.bank.png" alt="U.Bank">
+                                <span class="hover-text">Clique aqui</span> 
+                            </a>
                         </div>
                         <div class="text-description m-2">
                             <h4>U.Bank</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Molestiae, quas deserunt expedita tempore dignissimos 
-                                modi eos consectetur consequuntur vitae consequatur hic 
-                                alias ipsum doloribus, voluptas facere aut minima animi
-                                doloremque?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quas deserunt expedita tempore dignissimos modi eos consectetur consequuntur vitae consequatur hic alias ipsum doloribus, voluptas facere aut minima animi doloremque?</p>
                         </div>
                     </div>
                     <div class="swiper-slide m-5">
                         <div class="img m-2">
-                            <img src="" alt="">
+                            <a href="https://breno-muniz.github.io/Meu-Portfolio/" target="_blank" class="project-link">
+                                <img src="/imagens/modified_image.png" alt="U.Bank">
+                                <span class="hover-text">Clique aqui</span> 
+                            </a>
                         </div>
                         <div class="text-description m-2">
                             <h4>Meu Portfólio</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Molestiae, quas deserunt expedita tempore dignissimos 
-                                modi eos consectetur consequuntur vitae consequatur hic 
-                                alias ipsum doloribus, voluptas facere aut minima animi
-                                doloremque?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quas deserunt expedita tempore dignissimos modi eos consectetur consequuntur vitae consequatur hic alias ipsum doloribus, voluptas facere aut minima animi doloremque?</p>
                         </div>
                     </div>
+                   
                 </div>
                 <div class="button-next">
                     <i class='bx bxs-right-arrow-square'></i>
                 </div>
                 <div class="button-prev">
-                    <i class='bx bxs-left-arrow-square' ></i>
-                </div>
-            </div>   
+                    <i class='bx bxs-left-arrow-square'></i>
+                </div>  
+            </div> 
         </section>
-    </section>   
-
+    </section>
     <!--sessão de Projetos/-->
     <!--/Seção Linguagens-->
-    <section class="container border flex-center flex-column" id="Linguagens">
-        <div class="flex-center m-1 mb-5"><h1><span>Tecnologias & Resumo</span></h1></div>
-        <div class="hero-linguagens">
-            <div class="resumo flex-item-2 m-1 p-2">
-                <h3>Olá, me chamo alex e sou <span>desenvolvedor</span> Front-End</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Facilis rem fugit quas, veniam, non enim magnam deserunt possimus 
-                    architecto doloremque, facere libero rerum accusamus ex numquam 
-                    corporis debitis ducimus assumenda.</p>
+    <section class="container ct-linguaguens flex-center flex-column" id="Linguagens">
+        <h1><span>Tecnologias</span></h1>
+        <div class="hero-linguagens flex-center">
+            <div class="linguagens-box m-2 javascript">
+                <i class="bx bxl-javascript"></i>
             </div>
-    
-            <div class="linguagens-container  m-1 p-1 border">
-                <div class="linguagens-box m-2">
-                    <i class='bx bxl-javascript' class="jas"></i>
-                </div>
-    
-                <div class="linguagens-box m-2">  
-                    <a class='bx bxl-react'></a>  
-                </div>
-    
-                <div class="linguagens-box m-2">
-                    <ul class='bx bxl-sass' ></ul> 
-                </div>
-    
-                <div class="linguagens-box m-2">
-                    <li class='bx bxl-html5' ></li>
-                </div>
-    
-                <div class="linguagens-box m-2">
-                    <a class='bx bxl-css3'></a>
-                </div>
-    
-                <div class="linguagens-box m-2">   
-                    <li class='bx bxl-git'></li>
-                </div>
-                
+            <div class="linguagens-box m-2 react">
+                <i class="bx bxl-react"></i>
             </div>
-        </div>
-        
-            
-           
-        </div>
+            <div class="linguagens-box m-2 sass">
+                <i class="bx bxl-sass"></i>
+            </div>
+            <div class="linguagens-box m-2 html5">
+                <i class="bx bxl-html5"></i>
+            </div>
+            <div class="linguagens-box m-2 css3">
+                <i class="bx bxl-css3"></i>
+            </div>
+            <div class="linguagens-box m-2 git">
+                <i class="bx bxl-git"></i>
+            </div>
+        </div>       
     </section>
     <!--Seção Linguagens/-->
     <!--/sessão sobre-->
-    <section class="container flex-center flex-column Sobre" id="Sobre">
-        <h2><span>Sobre Mim</span></h2>
+    <section class="container ct-sobre flex-center flex-column Sobre" id="Sobre">
+        <h1><span>Sobre</span></h1>
         <div class="sobre-countent m-1 flex-center">
             <div class="img-sobre flex-center m-2">
                 <img src="imagens/eu_sobre.jpeg" alt="">

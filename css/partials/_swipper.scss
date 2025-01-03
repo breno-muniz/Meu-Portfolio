@@ -1,65 +1,116 @@
-
-.swiper-container{
-    width: 60%;
-    height: 560px;
+.swiper-container {
+    width: 80%; /* Ocupa 80% da largura da tela */
+    max-width: 1200px; /* Limita o tamanho máximo em telas grandes */
     
     position: relative;
-    
+    margin: 0 auto; /* Centraliza o swiper */
+    transition: width 0.3s ease-in-out;
 }
 
-.swiper-slide{
+.swiper-slide {
     max-width: 100%;
-    max-height: 100vh;
-    padding: 24px 36px;
-    border-radius: 20px;
+    height: 100%;
+    padding: 20px;
     margin: 8px 16px;
     background-color: $bg-color-secondary;
-    
-    display: flex !important;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    
-    
     box-shadow: 0px 17px 31px rgba(0, 99, 247, 0.27),
-    0px 5.125px 9.34559px rgba(5, 72, 255, 0.176),
-    0px 2.12866px 3.88168px rgba(6, 95, 155, 0.135),
-    0px 0.769896px 1.40393px rgba(0, 99, 247, 0.094);
+                0px 5.125px 9.34559px rgba(5, 72, 255, 0.176),
+                0px 2.12866px 3.88168px rgba(6, 95, 155, 0.135),
+                0px 0.769896px 1.40393px rgba(0, 99, 247, 0.094);
 
-
-    @include responsive(s){
-        max-width: 340px;
-    }
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative; 
 }
+
+.swiper-slide .img {
+    position: relative;
+    height: 62%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.swiper-slide .img img {
+    width: 100%;
+    height: 100%;
+    border: 0.8px solid $main-color;
+    object-fit: cover; /* Faz a imagem cobrir toda a div */
+    transition: transform 0.3s ease;
+}
+
+.swiper-slide .img:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-slide .img .hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: $text-color;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.swiper-slide .img:hover .hover-text {
+    opacity: 1;
+}
+
+.swiper-slide .text-description {
+    margin-top: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.swiper-slide .text-description h4 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.swiper-slide .text-description p {
+    font-size: 16px;
+    color: #666;
+}
+
 
 .button-next{
     position: absolute;
-    right: 5px;
-    top: 600px;
-
-    width: 36px;
-    height: 36px;
-    max-width: 100%;
-    cursor: pointer;
-
+    right: 0px;
     
-   
 }
 
 .button-prev{
     position: absolute;
-    
-    left: 5px;
-    top: 600px;
+    left: 35px;
 
-    width: 36px;
-    height: 36px;
-    max-width: 100%;
-    cursor: pointer;
-    
-    
 }
 
+/* Responsividade */
 
+@media (max-width: 767px) {
 
+    .swiper-slide {
+        max-width: 100%;
+    }
+
+    
+
+    .swiper-slide .text-description h4 {
+        font-size: 18px;
+    }
+
+    .swiper-slide .text-description p {
+        font-size: 12px;
+    }
+}

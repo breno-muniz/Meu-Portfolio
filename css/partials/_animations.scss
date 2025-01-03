@@ -1,1 +1,137 @@
 
+.hero-linguagens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+
+  width: 80%;
+  height: 80%;
+
+  background-color: $bg-color-secondary;
+  box-shadow: 0px 17px 31px rgba(0, 99, 247, 0.27),
+    0px 5.125px 9.34559px rgba(5, 72, 255, 0.176),
+    0px 2.12866px 3.88168px rgba(6, 95, 155, 0.135),
+    0px 0.769896px 1.40393px rgba(0, 99, 247, 0.094);
+  border-radius: 16px;
+}
+
+.linguagens-box {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  i {
+      font-size: 70px;
+      transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  &:hover {
+      transform: scale(1.2);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+
+      i {
+          transform: rotate(360deg);
+      }
+
+      &.javascript i {
+          color: #f7df1e;
+      }
+
+      &.react i {
+          color: #61dafb;
+      }
+
+      &.sass i {
+          color: #cc6699;
+      }
+
+      &.html5 i {
+          color: #e34c26;
+      }
+
+      &.css3 i {
+          color: #1572b6;
+      }
+
+      &.git i {
+          color: #f34f29;
+      }
+  }
+}
+
+// Responsividade
+@include responsive(xl) {
+  .linguagens-box {
+    width: 90px;
+    height: 90px;
+
+    i {
+      font-size: 70px;
+    }
+  }
+}
+
+// Large
+@include responsive(l) {
+  .linguagens-box {
+    width: 80px;
+    height: 80px;
+
+    i {
+      font-size: 70px;
+    }
+  }
+}
+
+// Medium
+@include responsive(m) {
+  .linguagens-box {
+    width: 70px;
+    height: 70px;
+    
+    i {
+      font-size: 70px;
+    }
+  }
+}
+
+// Small
+@include responsive(s) {
+  .linguagens-box {
+    width: 60px;
+    height: 60px;
+
+    i {
+      font-size: 70px;
+    }
+  }
+}
+
+// Extra Small
+@include responsive(xs) {
+  .linguagens-box {
+    width: 50px;
+    height: 50px;
+
+    i {
+      font-size: 60px;
+    }
+  }
+}
+
+// Animação de rotação
+@keyframes rotate {
+  0% {
+      transform: rotate(0);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
