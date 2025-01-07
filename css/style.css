@@ -1,4 +1,3 @@
-@charset "UTF-8";
 *, *::after, *::before {
   padding: 0;
   margin: 0;
@@ -193,6 +192,31 @@
   }
 }
 
+.cicles-bg-tec {
+  display: flex;
+  width: 848px;
+  height: 648px;
+  border-radius: 50%;
+  position: absolute;
+  animation: spin 4s linear infinite;
+  z-index: 0;
+  box-shadow: 0px 17px 31px rgba(0, 99, 247, 0.27), 0px 5.125px 9.34559px rgba(5, 72, 255, 0.176), 0px 2.12866px 3.88168px rgba(6, 95, 155, 0.135), 0px 0.769896px 1.40393px rgba(0, 99, 247, 0.094);
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 960px) {
+  .cicles-bg-tec {
+    width: 468px;
+    height: 668px;
+  }
+}
+
 .ct-sobre h1 {
   position: absolute;
   top: 0;
@@ -256,6 +280,15 @@
   .sobre-desc {
     max-width: 90%;
   }
+}
+
+.container-footer {
+  background-color: #010418;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 72px;
+  width: 100%;
 }
 
 h1 {
@@ -333,7 +366,7 @@ a {
 }
 
 p {
-  color: #666566;
+  color: #F7F4F3;
   font-family: "Source Sans 3", serif;
   font-size: 16x;
   line-height: 140%;
@@ -375,7 +408,7 @@ strong {
 
 a {
   font-family: "Source Sans 3", serif;
-  font-size: 24x;
+  font-size: 28x;
   line-height: 130%;
   text-decoration: none;
   color: #F7F4F3;
@@ -903,10 +936,10 @@ span {
 }
 
 .swiper-container {
-  width: 80%; /* Ocupa 80% da largura da tela */
-  max-width: 1200px; /* Limita o tamanho máximo em telas grandes */
+  width: 80%;
+  max-width: 1200px;
   position: relative;
-  margin: 0 auto; /* Centraliza o swiper */
+  margin: 0 auto;
   transition: width 0.3s ease-in-out;
 }
 
@@ -926,20 +959,12 @@ span {
   position: relative;
 }
 
-.swiper-slide .img {
-  position: relative;
-  height: 62%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide .img img {
+img {
   width: 100%;
   height: 100%;
   border: 0.8px solid #0197F6;
   -o-object-fit: cover;
-     object-fit: cover; /* Faz a imagem cobrir toda a div */
+     object-fit: cover;
   transition: transform 0.3s ease;
 }
 
@@ -967,24 +992,23 @@ span {
 }
 
 .swiper-slide .text-description {
-  margin-top: 20px;
+  background-color: #02040F;
   text-align: center;
-  color: #333;
+  border-radius: 20px;
 }
 
 .swiper-slide .text-description h4 {
-  font-size: 22px;
+  font-size: 28px;
   font-weight: bold;
 }
 
 .swiper-slide .text-description p {
-  font-size: 16px;
-  color: #666;
+  font-size: 20px;
 }
 
 .button-next {
   position: absolute;
-  right: 0px;
+  right: 0;
 }
 
 .button-prev {
@@ -992,18 +1016,6 @@ span {
   left: 35px;
 }
 
-/* Responsividade */
-@media (max-width: 767px) {
-  .swiper-slide {
-    max-width: 100%;
-  }
-  .swiper-slide .text-description h4 {
-    font-size: 18px;
-  }
-  .swiper-slide .text-description p {
-    font-size: 12px;
-  }
-}
 .bx {
   border: 4px solid #0197F6;
   justify-content: center;
@@ -1036,9 +1048,7 @@ span {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 8px;
-  width: 80%;
-  height: 80%;
+  gap: 6px;
   background-color: #010418;
   box-shadow: 0px 17px 31px rgba(0, 99, 247, 0.27), 0px 5.125px 9.34559px rgba(5, 72, 255, 0.176), 0px 2.12866px 3.88168px rgba(6, 95, 155, 0.135), 0px 0.769896px 1.40393px rgba(0, 99, 247, 0.094);
   border-radius: 16px;
@@ -1086,46 +1096,26 @@ span {
 }
 
 @media screen and (min-width: 1440px) {
-  .linguagens-box {
-    width: 90px;
-    height: 90px;
-  }
   .linguagens-box i {
     font-size: 70px;
   }
 }
 @media screen and (max-width: 1440px) and (min-width: 1140px) {
-  .linguagens-box {
-    width: 80px;
-    height: 80px;
-  }
   .linguagens-box i {
     font-size: 70px;
   }
 }
 @media screen and (max-width: 1140px) and (min-width: 960px) {
-  .linguagens-box {
-    width: 70px;
-    height: 70px;
-  }
   .linguagens-box i {
     font-size: 70px;
   }
 }
 @media screen and (max-width: 960px) {
-  .linguagens-box {
-    width: 60px;
-    height: 60px;
-  }
   .linguagens-box i {
     font-size: 70px;
   }
 }
 @media screen and (max-width: 540px) {
-  .linguagens-box {
-    width: 50px;
-    height: 50px;
-  }
   .linguagens-box i {
     font-size: 60px;
   }

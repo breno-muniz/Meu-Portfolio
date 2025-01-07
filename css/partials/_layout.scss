@@ -231,6 +231,34 @@ $container-s: 540px;
       }
 }
 
+.cicles-bg-tec{
+    display: flex;
+    width: 848px;
+    height: 648px;
+    border-radius: 50%;
+    position: absolute;
+    animation: spin 4s linear infinite;
+    z-index: 0;
+
+    box-shadow: 0px 17px 31px rgba(0, 99, 247, 0.27),
+    0px 5.125px 9.34559px rgba(5, 72, 255, 0.176),
+    0px 2.12866px 3.88168px rgba(6, 95, 155, 0.135),
+    0px 0.769896px 1.40393px rgba(0, 99, 247, 0.094);
+    
+    @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @include responsive(s){
+        width: 468px;
+        height: 668px;
+      }
+}
 
 //sobre
 .ct-sobre{
@@ -301,4 +329,14 @@ $container-s: 540px;
     @include responsive(s){
        max-width: 90%;
     }
+}
+
+//footer
+.container-footer{
+    background-color: $bg-color-secondary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+    width: 100%;
 }

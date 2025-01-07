@@ -48,7 +48,7 @@
     font-family: "Source Sans 3", serif;
     //p1
     @if $size == p1 and $device == desktop{
-        font-size: 24x;
+        font-size: 28x;
         line-height: 130%;
     }@else if $size == p1 and $device == mobile{
         font-size: 18px;
@@ -125,7 +125,7 @@ a{
 }
 
 p{
-    color: $gray-3;
+    color: $text-color;
     @include typeface-2(p2, desktop);
     
     @include responsive(s){

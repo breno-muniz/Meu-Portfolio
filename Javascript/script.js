@@ -1,24 +1,39 @@
-function scrollHeader(){
+// Scroll Header
+function scrollHeader() {
     const nav = document.getElementById('header');
-    if(this.scrollY >= 50) nav.classList.add('active-header'); else nav.classList.remove('active-header')
+    if (this.scrollY >= 50) nav.classList.add('active-header');
+    else nav.classList.remove('active-header');
 }
 
-window.addEventListener('scroll', scrollHeader)
+window.addEventListener('scroll', scrollHeader);
 
-
-//MENU MOBILE
-
+// MENU MOBILE
 const showMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId);
     const nav = document.getElementById(navId);
 
-    if(toggle && nav){
-        toggle.addEventListener('click', ()=>{
+    if (toggle && nav) {
+        
+        toggle.addEventListener('click', (e) => {
+            e.stopPropagation(); 
             nav.classList.toggle('active-menu-mobile');
             toggle.classList.toggle('active-bx');
-        })
+        });
+
+        
+        nav.addEventListener('click', () => {
+            nav.classList.remove('active-menu-mobile');
+            toggle.classList.remove('active-bx');
+        });
+
+        
+        document.body.addEventListener('click', () => {
+            if (nav.classList.contains('active-menu-mobile')) {
+                nav.classList.remove('active-menu-mobile');
+                toggle.classList.remove('active-bx');
+            }
+        });
     }
-}
+};
 
-showMenu('bx', 'menu-mobile')
-
+showMenu('bx', 'menu-mobile');

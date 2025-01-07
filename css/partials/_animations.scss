@@ -3,10 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 8px;
-
-  width: 80%;
-  height: 80%;
+  gap: 6px;
 
   background-color: $bg-color-secondary;
   box-shadow: 0px 17px 31px rgba(0, 99, 247, 0.27),
@@ -69,8 +66,7 @@
 // Responsividade
 @include responsive(xl) {
   .linguagens-box {
-    width: 90px;
-    height: 90px;
+    
 
     i {
       font-size: 70px;
@@ -81,8 +77,7 @@
 // Large
 @include responsive(l) {
   .linguagens-box {
-    width: 80px;
-    height: 80px;
+   
 
     i {
       font-size: 70px;
@@ -93,8 +88,7 @@
 // Medium
 @include responsive(m) {
   .linguagens-box {
-    width: 70px;
-    height: 70px;
+    
     
     i {
       font-size: 70px;
@@ -105,8 +99,7 @@
 // Small
 @include responsive(s) {
   .linguagens-box {
-    width: 60px;
-    height: 60px;
+    
 
     i {
       font-size: 70px;
@@ -117,8 +110,7 @@
 // Extra Small
 @include responsive(xs) {
   .linguagens-box {
-    width: 50px;
-    height: 50px;
+    
 
     i {
       font-size: 60px;
