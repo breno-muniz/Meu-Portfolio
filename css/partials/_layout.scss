@@ -269,11 +269,11 @@ $container-s: 540px;
         transform: translateX(-50%); 
         z-index: 10; 
         margin: 0; 
-        font-size: 64px; 
+        
         text-align: center; 
       
-        @include responsive(xs) {
-            font-size: 48px; 
+        @include responsive(s) {
+            font-size: 36px; 
           }
         
       }
@@ -303,6 +303,7 @@ $container-s: 540px;
     @include responsive(s){
         width: 70%;
         max-width: 70%;
+        height: 80%;
     }
 }
 

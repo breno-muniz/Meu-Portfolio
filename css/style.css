@@ -224,12 +224,11 @@
   transform: translateX(-50%);
   z-index: 10;
   margin: 0;
-  font-size: 64px;
   text-align: center;
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 960px) {
   .ct-sobre h1 {
-    font-size: 48px;
+    font-size: 36px;
   }
 }
 
@@ -256,6 +255,7 @@
   .img-sobre {
     width: 70%;
     max-width: 70%;
+    height: 80%;
   }
 }
 
@@ -342,7 +342,7 @@ h4 {
 @media screen and (max-width: 960px) {
   h4 {
     font-family: "Sora", serif;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 130%;
   }
 }
@@ -368,7 +368,7 @@ a {
 p {
   color: #F7F4F3;
   font-family: "Source Sans 3", serif;
-  font-size: 16x;
+  font-size: 28x;
   line-height: 140%;
 }
 @media screen and (max-width: 960px) {
@@ -387,7 +387,7 @@ p {
 strong {
   color: #161617;
   font-family: "Source Sans 3", serif;
-  font-size: 16x;
+  font-size: 28x;
   line-height: 140%;
 }
 @media screen and (max-width: 960px) {
@@ -936,52 +936,51 @@ span {
 }
 
 .swiper-container {
-  width: 80%;
-  max-width: 1200px;
+  width: 100%;
+  height: 100%;
   position: relative;
   margin: 0 auto;
-  transition: width 0.3s ease-in-out;
+  overflow: hidden;
+  padding: 10px;
 }
 
 .swiper-slide {
-  max-width: 100%;
+  width: 100%;
   height: 100%;
-  padding: 20px;
-  margin: 8px 16px;
-  background-color: #010418;
-  display: flex;
+  margin: 8px;
+  display: flex !important;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #010418;
   box-shadow: 0px 17px 31px rgba(0, 99, 247, 0.27), 0px 5.125px 9.34559px rgba(5, 72, 255, 0.176), 0px 2.12866px 3.88168px rgba(6, 95, 155, 0.135), 0px 0.769896px 1.40393px rgba(0, 99, 247, 0.094);
-  box-sizing: border-box;
+  border-radius: 8px;
   overflow: hidden;
-  position: relative;
+  text-align: center;
 }
 
-img {
-  width: 100%;
-  height: 100%;
+.swiper-slide img {
+  max-width: 90%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
   border: 0.8px solid #0197F6;
-  -o-object-fit: cover;
-     object-fit: cover;
   transition: transform 0.3s ease;
 }
 
 .swiper-slide .img:hover img {
   transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.swiper-slide .img .hover-text {
+.swiper-slide .hover-text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 20px;
+  font-size: 18px;
   color: #F7F4F3;
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 10px 20px;
+  padding: 8px 16px;
   border-radius: 5px;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -991,31 +990,64 @@ img {
   opacity: 1;
 }
 
-.swiper-slide .text-description {
+.text-description {
+  padding: 10px;
   background-color: #02040F;
-  text-align: center;
-  border-radius: 20px;
-}
-
-.swiper-slide .text-description h4 {
   font-size: 28px;
-  font-weight: bold;
+  line-height: 1.5;
+  word-wrap: break-word;
+  border-radius: 10px;
+  margin-top: 10px;
+  width: 90%;
+  overflow: auto;
+  max-height: 100%;
+  flex-grow: 1;
+  border: 0.5px solid #0197F6;
 }
 
-.swiper-slide .text-description p {
-  font-size: 20px;
+.button-next, .button-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
+@media screen and (max-width: 960px) {
+  .button-next, .button-prev {
+    display: none;
+  }
 }
 
 .button-next {
-  position: absolute;
   right: 0;
 }
 
 .button-prev {
-  position: absolute;
-  left: 35px;
+  left: 20px;
 }
 
+@media (max-width: 768px) {
+  .swiper-container {
+    padding: 5px;
+  }
+  .swiper-slide {
+    margin: 4px;
+  }
+  .swiper-slide img {
+    max-width: 80%;
+  }
+  /*.swiper-slide .text-description {
+      font-size: 14px;
+  }*/
+}
+@media (max-width: 480px) {
+  .swiper-slide img {
+    max-width: 70%;
+  }
+  /*.swiper-slide .text-description {
+      font-size: 12px;
+  }*/
+}
 .bx {
   border: 4px solid #0197F6;
   justify-content: center;
@@ -1031,17 +1063,6 @@ img {
 .bx:hover {
   transform: scale(1.08);
   color: #37adf7;
-}
-
-@media screen and (max-width: 960px) {
-  .app-footer {
-    flex-direction: column;
-  }
-}
-
-.app-store-footer, .app-play-footer {
-  margin: 0;
-  margin-top: 8px;
 }
 
 .hero-linguagens {
