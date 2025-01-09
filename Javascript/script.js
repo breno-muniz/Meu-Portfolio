@@ -51,9 +51,16 @@ const projects = [
     {
       title: "Meu Portfolio",
       description: "Meu Portfólio é a minha vitrine digital, onde compartilho meus projetos e experiências na área de desenvolvimento web. Criado com HTML, CSS, JavaScript e Sass, o site destaca meu foco em design responsivo e experiência do usuário (UX). Através de um layout moderno e funcional, o portfólio oferece uma navegação fluida e fácil, refletindo minha paixão por criar soluções web impactantes e interativas.",
-      imageUrl: "imagens/modified_image.png",
+      imageUrl: "imagens/portfolio.png",
       gitHubLink: "https://github.com/breno-muniz/Meu-Portfolio",
       projectLink: "https://breno-muniz.github.io/Meu-Portfolio/"
+    },
+    {
+      title: "Projeto em Desenvolvimento",
+      description: "Projeto ainda sendo desenvolvido, pegue um café e aguarde.",
+      imageUrl: "imagens/pg.png",
+      gitHubLink: "#",
+      projectLink: "#"
     }
   ];
 

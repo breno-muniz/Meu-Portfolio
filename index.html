@@ -73,26 +73,32 @@
             </div>
             </div>
             <div class="project-card" onclick="openModal(1)">
-            <img src="imagens/modified_image.png" alt="Imagem do Projeto">
+            <img src="imagens/portfolio.png" alt="Imagem do Projeto">
             <div class="overlay">
                 <h4>Meu Portfólio</h4>
             </div>
             </div>
+            <div class="project-card" onclick="openModal(2)">
+                <img src="imagens/pg.png" alt="Imagem do Projeto">
+                <div class="overlay">
+                    <h4>Em desenvolvimento</h4>
+                </div>
+                </div>
         </div>
 
         <!-- Modal -->
         <div id="projectModal" class="modal" onclick="handleModalClick(event)">
             <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <span class="navigation prev" onclick="navigateProject(-1)">&larr;</span>
-            <span class="navigation next" onclick="navigateProject(1)">&rarr;</span>
-            <img id="modalImage" src="" alt="Imagem do Projeto">
-            <h3 id="modalTitle"></h3>
-            <p id="modalDescription"></p>
-            <div class="buttons">
-                <a id="modalGitHub" href="#" target="_blank">GitHub</a>
-                <a id="modalLink" href="#" target="_blank">Ver Projeto</a>
-            </div>
+                <span class="close" onclick="closeModal()">&times;</span>
+                <span class="navigation prev" onclick="navigateProject(-1)">&larr;</span>
+                <span class="navigation next" onclick="navigateProject(1)">&rarr;</span>
+                <img id="modalImage" src="" alt="Imagem do Projeto">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+                <div class="buttons">
+                    <a id="modalGitHub" href="#" target="_blank">GitHub</a>
+                    <a id="modalLink" href="#" target="_blank">Ver Projeto</a>
+                </div>
             </div>
         </div>
     </section>
