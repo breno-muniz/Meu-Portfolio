@@ -37,3 +37,57 @@ const showMenu = (toggleId, navId) => {
 };
 
 showMenu('bx', 'menu-mobile');
+
+
+//Modal
+const projects = [
+    {
+      title: "U.bank",
+      description: "U.bank foi desenvolvido com HTML, CSS, JavaScript e estilizado utilizando Sass. O projeto proporciona uma interface que seja capaz de captar um possivel cliente ou investidor para criar sua conta no banc. O projeto foi criado com foco em UX e UI, utilizando o Figma para prototipagem.",
+      imageUrl: "imagens/U.bank.png",
+      gitHubLink: "https://github.com/breno-muniz/Projeto-U.bank",
+      projectLink: "https://breno-muniz.github.io/Projeto-U.bank/"
+    },
+    {
+      title: "Meu Portfolio",
+      description: "Meu Portfólio é a minha vitrine digital, onde compartilho meus projetos e experiências na área de desenvolvimento web. Criado com HTML, CSS, JavaScript e Sass, o site destaca meu foco em design responsivo e experiência do usuário (UX). Através de um layout moderno e funcional, o portfólio oferece uma navegação fluida e fácil, refletindo minha paixão por criar soluções web impactantes e interativas.",
+      imageUrl: "imagens/modified_image.png",
+      gitHubLink: "https://github.com/breno-muniz/Meu-Portfolio",
+      projectLink: "https://breno-muniz.github.io/Meu-Portfolio/"
+    }
+  ];
+
+  let currentProjectIndex = 0;
+
+  function openModal(index) {
+    currentProjectIndex = index;
+    const project = projects[currentProjectIndex];
+    document.getElementById('modalTitle').innerText = project.title;
+    document.getElementById('modalDescription').innerText = project.description;
+    document.getElementById('modalImage').src = project.imageUrl;
+    document.getElementById('modalGitHub').href = project.gitHubLink;
+    document.getElementById('modalLink').href = project.projectLink;
+    document.getElementById('projectModal').style.display = 'flex';
+  }
+
+  function closeModal() {
+    document.getElementById('projectModal').style.display = 'none';
+  }
+
+  function navigateProject(direction) {
+    currentProjectIndex = (currentProjectIndex + direction + projects.length) % projects.length;
+    openModal(currentProjectIndex);
+  }
+
+  function handleModalClick(event) {
+    if (event.target.id === 'projectModal') {
+      closeModal();
+    }
+  }
+
+  // Fecha o modal ao pressionar ESC
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeModal();
+    }
+  });
