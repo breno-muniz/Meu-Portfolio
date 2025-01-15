@@ -56,11 +56,11 @@ const projects = [
       projectLink: "https://breno-muniz.github.io/Meu-Portfolio/"
     },
     {
-      title: "Projeto em Desenvolvimento",
-      description: "Projeto ainda sendo desenvolvido, pegue um café e aguarde.",
-      imageUrl: "imagens/pg.png",
-      gitHubLink: "#",
-      projectLink: "#"
+      title: "Conversor de Moedas",
+      description: "Este projeto é uma aplicação web desenvolvida com HTML, CSS e JavaScript, projetada para converter valores entre diferentes moedas de forma prática e eficiente. O resultado é uma ferramenta simples e intuitiva, ideal para quem precisa de conversões rápidas e precisas.",
+      imageUrl: "imagens/Conversor.png",
+      gitHubLink: "https://github.com/breno-muniz/Conversor-Moedass",
+      projectLink: "https://breno-muniz.github.io/Conversor-Moedass/"
     }
   ];
 

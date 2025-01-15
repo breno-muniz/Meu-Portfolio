@@ -7,7 +7,7 @@
         font-size: 64px;
         line-height: 100%;
     }@else if $size == h1 and $device == mobile{
-        font-size: 36px;
+        font-size: 46px;
         line-height: 100%;
     }
     //h2
@@ -23,7 +23,7 @@
         font-size: 36px;
         line-height: 120%;
     }@else if $size == h3 and $device == mobile{
-        font-size: 24px;
+        font-size: 36px;
         line-height: 120%;
     }
     //h4

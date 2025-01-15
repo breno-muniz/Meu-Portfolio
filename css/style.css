@@ -255,7 +255,7 @@
   .img-sobre {
     width: 70%;
     max-width: 70%;
-    height: 80%;
+    height: 50%;
   }
 }
 
@@ -284,7 +284,7 @@
 
 @media screen and (max-width: 540px) {
   .sobre-desc h4 {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -306,7 +306,7 @@ h1 {
 @media screen and (max-width: 960px) {
   h1 {
     font-family: "Sora", serif;
-    font-size: 36px;
+    font-size: 46px;
     line-height: 100%;
   }
 }
@@ -334,7 +334,7 @@ h3 {
 @media screen and (max-width: 960px) {
   h3 {
     font-family: "Sora", serif;
-    font-size: 24px;
+    font-size: 36px;
     line-height: 120%;
   }
 }
@@ -1055,8 +1055,8 @@ span {
 
 .close {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 26px;
+  right: 12px;
   font-size: 28px;
   color: #0197F6;
   cursor: pointer;
